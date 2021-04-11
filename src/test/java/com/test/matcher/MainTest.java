@@ -1,6 +1,6 @@
-package com.test.mather;
+package com.test.matcher;
 
-import static com.test.mather.Main.matches;
+import static com.test.matcher.Main.matches;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
