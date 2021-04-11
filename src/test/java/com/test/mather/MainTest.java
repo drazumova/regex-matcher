@@ -50,13 +50,18 @@ class MainTest {
     }
 
     @Test
+    void matchesNullBoth() {
+        assertFalse(matches(null, null));
+    }
+
+    @Test
     void matchesIncorrectRegex() {
         assertFalse(matches("some text", "[a*"));
     }
 
     @Test
     void matchesExponentialBacktracking() {
-        assertTrue(matches("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "((a|a)*|.*)"));
+        assertFalse(matches("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "((a|a)*|.*)"));
     }
 
     @Test

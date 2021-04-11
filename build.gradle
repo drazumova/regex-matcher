@@ -10,6 +10,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'com.github.jkutner:saferegex:1.0.2'
     compile group: 'com.google.guava', name: 'guava', version: '23.5-jre'
     implementation group: 'com.google.guava', name: 'guava', version: '11.0.2'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
